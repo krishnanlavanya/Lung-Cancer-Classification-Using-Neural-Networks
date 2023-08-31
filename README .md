@@ -1,7 +1,6 @@
 # Diagnostic Classification Of Lung Nodules Using 3D Neural Networks
-Network Architecture for the ISBI_2018 paper : DIAGNOSTIC CLASSIFICATION OF LUNG NODULES USING 3D NEURAL NETWORKS 
-To view the paper on Archive click the following https://arxiv.org/abs/1803.07192
-Visit My website - .... to be updated shortly for intuition, hints etc
+
+
 ## Built With/Things Needed to implement experiments
 
 * [Python](https://www.python.org/downloads/) - Python-2 
@@ -25,7 +24,7 @@ You have to provide the inputs.
 ```
 ## Some guidelines to run the network (Please follow the paper for exact details)
 The following lines provide a very simple example of how you may train the network provided in this repository and obtain predictions.
-#### We are not providing the complete implementation (Dataset/Preprocessing/Calculation of ROC/ACC/ etc etc) but just the core network architecture.
+#### I have not provided the complete implementation (Dataset/Preprocessing/Calculation of ROC/ACC/ etc etc) but just the core network architecture.
 You may include validation set and callback function as demonstrated, however 
 please note we never used those. In the following lines the network is referred as "finalmodel"
 You may apply early stopping if desired, but for our experiments we didnt.
@@ -55,19 +54,3 @@ You can obtain predicitions of the different outputs using the keras's model.pre
 predict_x=finalmodel.predict([X1_test,X2_test],batch_size=8)[index]
 ```
 
-## Contribution
-
-All the code were written by the authors of this paper.
-Please contact (raun- rd31879@uga.edu) for questions and queries and more details if you are having trouble with the complete implimentation. 
-
-## Please cite our paper if this code or the idea of multioutput or if this study of pulmonary nodules helps your work
-###### Our paper - 
-@inproceedings{dey2018diagnostic,
-  title={Diagnostic classification of lung nodules using 3D neural networks},
-  author={Dey, Raunak and Lu, Zhongjie and Hong, Yi},
-  booktitle={Biomedical Imaging (ISBI 2018), 2018 IEEE 15th International Symposium on},
-  pages={774--778},
-  year={2018},
-  organization={IEEE}
-}
-######
